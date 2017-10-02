@@ -1,0 +1,34 @@
+.header-content {
+    width: 85%;
+    margin: 0 auto;
+}
+.header-title {
+    width:540px;
+    margin: 20px auto;
+}
+.header-title .howie {
+    top: 20px;
+    position: relative;
+    width: 300px;
+}
+.header-title .hh {
+    stroke: #a89d9d;    
+}
+.header-title h1 {
+    display: inline-block;
+    color: #a89d9d;
+    font-size: 40px;
+}
+
+.header-nav {
+    position: relative;
+    width: 590px;
+    margin: 0 auto;
+}
+.header-nav ul li{
+    display: inline-block;
+    margin: 5px 25px;
+    list-style: none;
+    color: #a89d9d;
+    font-size: 17px;
+}
