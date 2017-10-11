@@ -157,6 +157,15 @@ main {
     line-height: 40px;
 }
 /*-----*/
+.three {
+    width: 100%;
+}
+.three img svg{
+    width: 100%;
+}
+main1 {
+    column-count: 3;
+}
 
 .loading {
     width: 650px;

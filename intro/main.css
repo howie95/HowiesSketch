@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+}
+main {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #95CDAF;
+    background: -moz-linear-gradient(top, #95CDAF, rgb(83, 145, 111) 100%);
+    background: -webkit-linear-gradient( #95CDAF 90%, #86bb9c 90%,#86bb9c 100%);
+}
+.background {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    background-color:  #95CDAF;
+}
+.lampsvg{
+    position: absolute;
+    width: 70px;
+    top: -50px;
+}
+.lampsvg svg {
+    padding: 5px;
+}
+.lampsvg .cls-1{
+    stroke: #a09e8f;
+    stroke-width: 3px;
+    stroke-miterlimit: 10;
+}
+.lampmain {
+    fill: #E3DFC3;
+}
+.lampin {
+    fill: #FCF7DE;
+}
+.lampbub {
+    fill: #fff7d1;
+}
+
+
+.desksvg {
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin-top: 320px;
+}
+.desksvg .cls-1{
+    stroke: #a09e8f;
+    stroke-width: 1px;
+    stroke-miterlimit: 10;
+}
+@keyframes draw {
+    from{
+        fill: #95CDAF;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+.deskbtm {
+    fill: #E3DFC3;
+    stroke-dasharray: 642px;
+    stroke-dashoffset: 642px;
+    animation: draw 2s linear forwards;
+}
+.desktop {
+    fill: #FCF7DE;
+    stroke-dasharray: 1196px;
+    stroke-dashoffset: 1196px;
+    animation: draw 2s linear forwards;
+}
+.scrbtm {
+    fill: #FDFDDD;
+    stroke-dasharray: 138px;
+    stroke-dashoffset: 138px;
+    animation: draw 2s linear forwards;
+}
+.scrout{
+    fill: #FCF7DE;
+    stroke-dasharray: 711px;
+    stroke-dashoffset: 711px;
+    animation: draw 2s linear forwards;
+}
+.scrin {
+    fill: #69727e;
+    stroke-opacity: 0;
+    animation: draw 2s linear forwards;
+}
+.desksvg .menu {
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    height: 45px;
+}
+.desksvg .menu ul{
+    display: flex;
+    justify-content:space-around;
+    margin: 0 20px;
+    padding: 0;
+}
+.desksvg .menu ul li{
+    display: inline-block;
+    text-decoration: none;
+    line-height: 45px;
+    font-size: 15px;
+}
+
+.cover {
+    position: absolute;
+    margin-top: 320px;
+    width: 600px;
+    height: 300px;
+    z-index: 998;
+}
+.cover .screen {
+    position: absolute;
+    top: 7px;
+    right: 83px;
+    width: 215px;
+    height: 138px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+}
+.cover .desk {
+    position: absolute;
+    top: 167px;
+    width: 600px;
+    height: 95px;
+    padding-top: 20px;
+    padding-left: 45px;
+}
+/*firstsight*/
+.screen .scr1 h1,.scr1 h2{
+    color: white;
+    font-weight: lighter;
+}
+.screen .scr1 h1{
+    margin: 5px 10px;
+    font-size: 20px;
+}
+.screen .scr1 h2{
+    display: inline;
+    margin: 0 10px;
+    font-size: 15px;
+}
+.screen .scr1 span{
+    position: relative;
+    top: 1px;
+    left: -10px;
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    border-right: 1px solid white;
+    animation: scr1span 1s step-end infinite;
+    opacity: 1
+}
+@keyframes scr1span {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+.desk .scr1 {
+    width: 300px;
+}
+.desk .scr1 svg path{
+    stroke: #ccbea3;
+    stroke-width: 1px;
+}
+.desk .scr1 svg .cls-1{
+    fill: white;
+}
+.desk .scr1 svg .cls-2{
+    fill: #FDFDDD;
+}
